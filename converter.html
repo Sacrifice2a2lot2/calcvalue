@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <div id="multiply">
+        enter $:    <input type="text" id="a" width="90"><br>
+        enter C: <input type="text" id="b" width="90"><br>
+        your result is:<p id="result">0</p>
+        <button onclick="dollar()">$</button>
+        <button onclick="som()">C</button>
+     </div>
+     <script>
+        function dollar(){
+            var x=document.getElementById("a").value;
+            // var y=document.getElementById("b").value;
+            document.getElementById("result").innerHTML=x*84;
+           }
+        function som(){
+            var y=document.getElementById("b").value;
+            document.getElementById("result").innerHTML=y/84;
+        }
+     </script>
+
+</body>
+</html>
